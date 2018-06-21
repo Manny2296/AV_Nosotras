@@ -1,0 +1,15 @@
+C:\Users\maria\AppData\Local\Temporary Projects\AV_Nosotras\bin\Debug\AV_Nosotras.exe.config
+C:\Users\maria\Documents\Visual Studio 2012\Projects\AV_Nosotras\AV_Nosotras\bin\Debug\AV_Nosotras.exe.config
+C:\Users\maria\Documents\Visual Studio 2012\Projects\AV_Nosotras\AV_Nosotras\bin\Debug\AV_Nosotras.exe
+C:\Users\maria\Documents\Visual Studio 2012\Projects\AV_Nosotras\AV_Nosotras\bin\Debug\AV_Nosotras.pdb
+C:\Users\maria\Documents\Visual Studio 2012\Projects\AV_Nosotras\AV_Nosotras\bin\Debug\MySql.Data.DLL
+C:\Users\maria\Documents\Visual Studio 2012\Projects\AV_Nosotras\AV_Nosotras\obj\Debug\MainWindow.baml
+C:\Users\maria\Documents\Visual Studio 2012\Projects\AV_Nosotras\AV_Nosotras\obj\Debug\MainWindow.g.cs
+C:\Users\maria\Documents\Visual Studio 2012\Projects\AV_Nosotras\AV_Nosotras\obj\Debug\App.g.cs
+C:\Users\maria\Documents\Visual Studio 2012\Projects\AV_Nosotras\AV_Nosotras\obj\Debug\AV_Nosotras_MarkupCompile.cache
+C:\Users\maria\Documents\Visual Studio 2012\Projects\AV_Nosotras\AV_Nosotras\obj\Debug\AV_Nosotras.g.resources
+C:\Users\maria\Documents\Visual Studio 2012\Projects\AV_Nosotras\AV_Nosotras\obj\Debug\AV_Nosotras.Properties.Resources.resources
+C:\Users\maria\Documents\Visual Studio 2012\Projects\AV_Nosotras\AV_Nosotras\obj\Debug\AV_Nosotras.csproj.GenerateResource.Cache
+C:\Users\maria\Documents\Visual Studio 2012\Projects\AV_Nosotras\AV_Nosotras\obj\Debug\AV_Nosotras.exe
+C:\Users\maria\Documents\Visual Studio 2012\Projects\AV_Nosotras\AV_Nosotras\obj\Debug\AV_Nosotras.pdb
+C:\Users\maria\Documents\Visual Studio 2012\Projects\AV_Nosotras\AV_Nosotras\obj\Debug\AV_Nosotras.csprojResolveAssemblyReference.cache
