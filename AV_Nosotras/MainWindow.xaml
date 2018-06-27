@@ -39,16 +39,26 @@
                     <Label x:Name="lbl_instrucciones_Copy3"  Content="Producto Gratis" HorizontalAlignment="Left" Margin="279,390,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Foreground="#FF7E00B5"/>
                 </Grid>
                 <Label x:Name="lbl_autor"  Content="Desarrollado por : APR Solutions " HorizontalAlignment="Left" Margin="305,479,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="10" Foreground="#FF7E00B5" FontStyle="Italic"/>
-                <Grid x:Name="GridTab_productos" Visibility="Hidden" HorizontalAlignment="Left" Height="488" Margin="19,10,0,0" VerticalAlignment="Top" Width="438">
+                <Grid x:Name="GridTab_productos" Visibility="Visible" HorizontalAlignment="Left" Height="488" Margin="19,10,0,0" VerticalAlignment="Top" Width="438">
                     <Image x:Name="img_product1" HorizontalAlignment="Left" Height="131" Margin="41,29,0,0" VerticalAlignment="Top" Width="124" Source="Resources/Toalla__ultra_invisible_rapisec_800x800.png" Stretch="UniformToFill"/>
-                    <RadioButton x:Name="rdb_product1" Content="X10 - Nosotras Ultra &#xD;&#xA;Invisible &#xD;&#xA;" HorizontalAlignment="Left" Margin="28,160,0,0" VerticalAlignment="Top" FontSize="16" Padding="4,-1,0,-12" RenderTransformOrigin="0.4,0" Background="Transparent" Foreground="#FF7E00B5" />
+                    <RadioButton x:Name="rdb_product1" Content="X10 - Nosotras Ultra &#xD;&#xA;Invisible &#xD;&#xA;" HorizontalAlignment="Left" Margin="28,160,0,0" VerticalAlignment="Top" FontSize="16" Padding="4,-1,0,-12" RenderTransformOrigin="0.4,0" Background="Transparent" Foreground="#FF7E00B5" Checked="rdb_product1_Checked" />
                     <Label x:Name="lbl_precio1" Content="Precio: XXX COP" HorizontalAlignment="Left" Margin="52,211,0,0" VerticalAlignment="Top" Width="113" FontWeight="Bold"/>
                     <Image x:Name="img_product2" HorizontalAlignment="Left" Height="131" Margin="275,29,0,0" VerticalAlignment="Top" Width="124" Source="Resources/download.jpg" Stretch="Fill"/>
-                    <RadioButton x:Name="rdb_product2" Content="X8 - Nosotras Ultra &#xA;Invisible &#xA;" HorizontalAlignment="Left" Margin="258,160,0,0" VerticalAlignment="Top" FontSize="16" Padding="4,-1,0,-12" RenderTransformOrigin="0.4,0" Background="Transparent" Foreground="#FF7E00B5" />
+                    <RadioButton x:Name="rdb_product2" Content="X8 - Nosotras Ultra &#xA;Invisible &#xA;" HorizontalAlignment="Left" Margin="258,160,0,0" VerticalAlignment="Top" FontSize="16" Padding="4,-1,0,-12" RenderTransformOrigin="0.4,0" Background="Transparent" Foreground="#FF7E00B5" Checked="rdb_product2_Checked" />
                     <Label x:Name="lbl_precio2" Content="Precio: XXX COP" HorizontalAlignment="Left" Margin="275,211,0,0" VerticalAlignment="Top" Width="113" FontWeight="Bold"/>
                     <Image x:Name="img_product3" HorizontalAlignment="Left" Height="131" Margin="155,259,0,0" VerticalAlignment="Top" Width="124" Source="Resources/download (1).jpg" Stretch="Fill"/>
-                    <RadioButton x:Name="rdb_product3" Content="X15 - Nosotras Multi &#xA;         Estilo &#xA;" HorizontalAlignment="Left" Margin="138,390,0,0" VerticalAlignment="Top" FontSize="16" Padding="4,-1,0,-12" RenderTransformOrigin="0.4,0" Background="Transparent" Foreground="#FF7E00B5" />
+                    <RadioButton x:Name="rdb_product3" Content="X15 - Nosotras Multi &#xA;         Estilo &#xA;" HorizontalAlignment="Left" Margin="138,390,0,0" VerticalAlignment="Top" FontSize="16" Padding="4,-1,0,-12" RenderTransformOrigin="0.4,0" Background="Transparent" Foreground="#FF7E00B5" Checked="rdb_product3_Checked" />
                     <Label x:Name="lbl_precio3" Content="Precio: XXX COP" HorizontalAlignment="Left" Margin="155,441,0,0" VerticalAlignment="Top" Width="113" FontWeight="Bold"/>
+                    <Button x:Name="btn_validate" Content="" HorizontalAlignment="Left" Margin="353,385,0,0" VerticalAlignment="Top" Width="75" Height="56" Click="Button_Click_2">
+                        <Button.Background>
+                            <ImageBrush ImageSource="Resources/checked.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="btn_cancel"  Content="" HorizontalAlignment="Right" Margin="0,390,353,0" VerticalAlignment="Top" Width="75" Height="56" RenderTransformOrigin="-1.747,0.446" Click="Button_Click_1">
+                        <Button.Background>
+                            <ImageBrush ImageSource="Resources/error.png"/>
+                        </Button.Background>
+                    </Button>
                 </Grid>
             </Grid>
             <Grid HorizontalAlignment="Left" Height="557" VerticalAlignment="Top" Width="320">

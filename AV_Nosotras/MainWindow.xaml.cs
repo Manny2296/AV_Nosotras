@@ -67,6 +67,7 @@ namespace AV_Nosotras
                         GridTab_Publicidad.Visibility = Visibility.Hidden;
                         GridTab_Menu.Visibility = Visibility.Visible;
                         GridTab_menu_opciones.Visibility =Visibility.Visible;
+                        GridTab_productos.Visibility = Visibility.Hidden;
                         funcVideoSelect(0, media_element_inicio);
                         label_changeTextFunction(lbl_instrucciones, "Bienvenido, Seleccione una opción \npara continuar :");
                         break;
@@ -76,6 +77,8 @@ namespace AV_Nosotras
                     {
                         GridTab_menu_opciones.Visibility = Visibility.Hidden;
                         GridTab_productos.Visibility = Visibility.Visible;
+                        btn_cancel.Visibility = Visibility.Hidden;
+                        btn_validate.Visibility = Visibility.Hidden;
                     }break;
             }
         }
@@ -164,6 +167,40 @@ namespace AV_Nosotras
         private void btn_comprar_producto_Click(object sender, RoutedEventArgs e)
         {
             funcVisibility(3);
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            funcVisibility(1);
+            rdb_product1.IsChecked = false;
+            rdb_product2.IsChecked = false;
+            rdb_product3.IsChecked = false;
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            funcVisibility(0);
+            rdb_product1.IsChecked = false;
+            rdb_product2.IsChecked = false;
+            rdb_product3.IsChecked = false;
+        }
+
+        private void rdb_product1_Checked(object sender, RoutedEventArgs e)
+        {
+            btn_cancel.Visibility = Visibility.Visible;
+            btn_validate.Visibility = Visibility.Visible;
+        }
+
+        private void rdb_product2_Checked(object sender, RoutedEventArgs e)
+        {
+            btn_cancel.Visibility = Visibility.Visible;
+            btn_validate.Visibility = Visibility.Visible;
+        }
+
+        private void rdb_product3_Checked(object sender, RoutedEventArgs e)
+        {
+            btn_cancel.Visibility = Visibility.Visible;
+            btn_validate.Visibility = Visibility.Visible;
         }
 
        
