@@ -114,6 +114,15 @@
   <ItemGroup>
     <Resource Include="Resources\gift.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Toalla__ultra_invisible_rapisec_800x800.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\download %281%29.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

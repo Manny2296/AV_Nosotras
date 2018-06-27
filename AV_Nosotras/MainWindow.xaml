@@ -12,31 +12,44 @@
                 <ColumnDefinition Width="95*"/>
             </Grid.ColumnDefinitions>
             <Grid Grid.Column="1" HorizontalAlignment="Left" Height="508" VerticalAlignment="Top" Width="475" Margin="0,49,0,0">
-                <Button x:Name="btn_comprar_producto" Content="" HorizontalAlignment="Left" Margin="50,44,0,0" VerticalAlignment="Top" Width="125" Height="122">
-                    <Button.Background>
-                        <ImageBrush ImageSource="Resources/Toalla__doble_invisible_800x800.png"/>
-                    </Button.Background>
-                </Button>
-                <Label x:Name="lbl_instrucciones_Copy"  Content="Comprar Producto" HorizontalAlignment="Left" Margin="27,166,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Foreground="#FF7E00B5"/>
-                <Button x:Name="btn_inscripcionEventos" Content="" HorizontalAlignment="Left" Margin="290,44,0,0" VerticalAlignment="Top" Width="125" Height="122" RenderTransformOrigin="0.404,0.154">
-                    <Button.Background>
-                        <ImageBrush ImageSource="Resources/woman (1).png"/>
-                    </Button.Background>
-                </Button>
-                <Label x:Name="lbl_instrucciones_Copy1"  Content="Inscripción para &#xD;&#xA;Eventos" HorizontalAlignment="Left" Margin="272,166,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Foreground="#FF7E00B5"/>
-                <Button x:Name="btn_sugerencias" Content="" HorizontalAlignment="Left" Margin="50,269,0,0" VerticalAlignment="Top" Width="125" Height="122" RenderTransformOrigin="2.072,0.553">
-                    <Button.Background>
-                        <ImageBrush ImageSource="Resources/icon (4).png"/>
-                    </Button.Background>
-                </Button>
-                <Label x:Name="lbl_instrucciones_Copy2"  Content="Sugerencias" HorizontalAlignment="Left" Margin="56,396,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18" Foreground="#FF7E00B5"/>
-                <Button x:Name="btn_free_product"  Content="" HorizontalAlignment="Left" Margin="290,269,0,0" VerticalAlignment="Top" Width="125" Height="122" RenderTransformOrigin="2.072,0.553">
-                    <Button.Background>
-                        <ImageBrush ImageSource="Resources/gift.png"/>
-                    </Button.Background>
-                </Button>
-                <Label x:Name="lbl_instrucciones_Copy3"  Content="Producto Gratis" HorizontalAlignment="Left" Margin="282,396,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Foreground="#FF7E00B5"/>
-                <Label x:Name="lbl_instrucciones_Copy4"  Content="Desarrollado por : APR Solutions " HorizontalAlignment="Left" Margin="305,479,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="10" Foreground="#FF7E00B5" FontStyle="Italic"/>
+                <Grid x:Name="GridTab_menu_opciones" Visibility="Hidden" HorizontalAlignment="Left" Height="488" Margin="19,14,0,0" VerticalAlignment="Top" Width="438">
+                    <Button x:Name="btn_comprar_producto" Content="" HorizontalAlignment="Left" Margin="47,38,0,0" VerticalAlignment="Top" Width="125" Height="122" Click="btn_comprar_producto_Click">
+                        <Button.Background>
+                            <ImageBrush ImageSource="Resources/Toalla__doble_invisible_800x800.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Label x:Name="lbl_instrucciones_Copy"  Content="Comprar Producto" HorizontalAlignment="Left" Margin="24,160,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Foreground="#FF7E00B5"/>
+                    <Button x:Name="btn_inscripcionEventos" Content="" HorizontalAlignment="Left" Margin="287,38,0,0" VerticalAlignment="Top" Width="125" Height="122" RenderTransformOrigin="0.404,0.154">
+                        <Button.Background>
+                            <ImageBrush ImageSource="Resources/woman (1).png"/>
+                        </Button.Background>
+                    </Button>
+                    <Label x:Name="lbl_instrucciones_Copy1"  Content="Inscripción para &#xA;Eventos" HorizontalAlignment="Left" Margin="269,160,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Foreground="#FF7E00B5"/>
+                    <Button x:Name="btn_sugerencias" Content="" HorizontalAlignment="Left" Margin="47,263,0,0" VerticalAlignment="Top" Width="125" Height="122" RenderTransformOrigin="2.072,0.553">
+                        <Button.Background>
+                            <ImageBrush ImageSource="Resources/icon (4).png"/>
+                        </Button.Background>
+                    </Button>
+                    <Label x:Name="lbl_instrucciones_Copy2"  Content="Sugerencias" HorizontalAlignment="Left" Margin="53,390,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18" Foreground="#FF7E00B5"/>
+                    <Button x:Name="btn_free_product"  Content="" HorizontalAlignment="Left" Margin="287,263,0,0" VerticalAlignment="Top" Width="125" Height="122" RenderTransformOrigin="2.072,0.553">
+                        <Button.Background>
+                            <ImageBrush ImageSource="Resources/gift.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Label x:Name="lbl_instrucciones_Copy3"  Content="Producto Gratis" HorizontalAlignment="Left" Margin="279,390,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Foreground="#FF7E00B5"/>
+                </Grid>
+                <Label x:Name="lbl_autor"  Content="Desarrollado por : APR Solutions " HorizontalAlignment="Left" Margin="305,479,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="10" Foreground="#FF7E00B5" FontStyle="Italic"/>
+                <Grid x:Name="GridTab_productos" Visibility="Hidden" HorizontalAlignment="Left" Height="488" Margin="19,10,0,0" VerticalAlignment="Top" Width="438">
+                    <Image x:Name="img_product1" HorizontalAlignment="Left" Height="131" Margin="41,29,0,0" VerticalAlignment="Top" Width="124" Source="Resources/Toalla__ultra_invisible_rapisec_800x800.png" Stretch="UniformToFill"/>
+                    <RadioButton x:Name="rdb_product1" Content="X10 - Nosotras Ultra &#xD;&#xA;Invisible &#xD;&#xA;" HorizontalAlignment="Left" Margin="28,160,0,0" VerticalAlignment="Top" FontSize="16" Padding="4,-1,0,-12" RenderTransformOrigin="0.4,0" Background="Transparent" Foreground="#FF7E00B5" />
+                    <Label x:Name="lbl_precio1" Content="Precio: XXX COP" HorizontalAlignment="Left" Margin="52,211,0,0" VerticalAlignment="Top" Width="113" FontWeight="Bold"/>
+                    <Image x:Name="img_product2" HorizontalAlignment="Left" Height="131" Margin="275,29,0,0" VerticalAlignment="Top" Width="124" Source="Resources/download.jpg" Stretch="Fill"/>
+                    <RadioButton x:Name="rdb_product2" Content="X8 - Nosotras Ultra &#xA;Invisible &#xA;" HorizontalAlignment="Left" Margin="258,160,0,0" VerticalAlignment="Top" FontSize="16" Padding="4,-1,0,-12" RenderTransformOrigin="0.4,0" Background="Transparent" Foreground="#FF7E00B5" />
+                    <Label x:Name="lbl_precio2" Content="Precio: XXX COP" HorizontalAlignment="Left" Margin="275,211,0,0" VerticalAlignment="Top" Width="113" FontWeight="Bold"/>
+                    <Image x:Name="img_product3" HorizontalAlignment="Left" Height="131" Margin="155,259,0,0" VerticalAlignment="Top" Width="124" Source="Resources/download (1).jpg" Stretch="Fill"/>
+                    <RadioButton x:Name="rdb_product3" Content="X15 - Nosotras Multi &#xA;         Estilo &#xA;" HorizontalAlignment="Left" Margin="138,390,0,0" VerticalAlignment="Top" FontSize="16" Padding="4,-1,0,-12" RenderTransformOrigin="0.4,0" Background="Transparent" Foreground="#FF7E00B5" />
+                    <Label x:Name="lbl_precio3" Content="Precio: XXX COP" HorizontalAlignment="Left" Margin="155,441,0,0" VerticalAlignment="Top" Width="113" FontWeight="Bold"/>
+                </Grid>
             </Grid>
             <Grid HorizontalAlignment="Left" Height="557" VerticalAlignment="Top" Width="320">
                 <MediaElement x:Name="media_element_inicio" Stretch="Fill" HorizontalAlignment="Left" Height="392" VerticalAlignment="Top" Width="320"/>

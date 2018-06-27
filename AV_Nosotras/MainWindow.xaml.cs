@@ -31,7 +31,7 @@ namespace AV_Nosotras
         {
             classCon = new ClassConsulta(Conn_Local, Conn_Rmt);
             InitializeComponent();
-            funcVideoSelect(0, media_element_publicite);
+            funcVideoSelect(6, media_element_publicite);
             funcVisibility(0);
            
           
@@ -58,16 +58,25 @@ namespace AV_Nosotras
                     {
                         GridTab_Publicidad.Visibility = Visibility.Visible;
                         GridTab_Menu.Visibility = Visibility.Hidden;
+                        GridTab_menu_opciones.Visibility = Visibility.Visible;
+                        GridTab_productos.Visibility = Visibility.Hidden;
                         break;
                     }
                 case 1:
                     {
                         GridTab_Publicidad.Visibility = Visibility.Hidden;
                         GridTab_Menu.Visibility = Visibility.Visible;
+                        GridTab_menu_opciones.Visibility =Visibility.Visible;
                         funcVideoSelect(0, media_element_inicio);
                         label_changeTextFunction(lbl_instrucciones, "Bienvenido, Seleccione una opción \npara continuar :");
                         break;
                     }
+
+                case 3:
+                    {
+                        GridTab_menu_opciones.Visibility = Visibility.Hidden;
+                        GridTab_productos.Visibility = Visibility.Visible;
+                    }break;
             }
         }
         private void funcVideoSelect(int _idxVid, MediaElement mediaelement)
@@ -151,5 +160,15 @@ namespace AV_Nosotras
             funcVisibility(1);
             
         }
+
+        private void btn_comprar_producto_Click(object sender, RoutedEventArgs e)
+        {
+            funcVisibility(3);
+        }
+
+       
+        
+
+     
     }
 }

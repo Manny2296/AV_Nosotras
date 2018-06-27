@@ -165,6 +165,7 @@ namespace AV_Nosotras
                 case 3: vS_vid = @"videos\Informacion.avi"; break;
                 case 4: vS_vid = @"videos\ReposoP.avi"; break;
                 case 5: vS_vid = @"videos\SaludoP.avi"; break;
+                case 6: vS_vid = @"videos\Publicidad1.mp4"; break;
             }
             return vS_vid;
         }
