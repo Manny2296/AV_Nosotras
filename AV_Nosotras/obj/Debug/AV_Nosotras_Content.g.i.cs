@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/error.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/checked%20(1).png")]
 
 

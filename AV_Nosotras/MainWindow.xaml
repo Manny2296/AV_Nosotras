@@ -1,72 +1,114 @@
 ﻿<Window x:Class="AV_Nosotras.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="AV_Nosotras" Height="588.245" Width="805.459" ResizeMode="NoResize">
-    <Grid HorizontalAlignment="Left" Width="795">
-        <Grid x:Name="GridTab_Publicidad" Visibility="Hidden"  HorizontalAlignment="Left" Height="557" VerticalAlignment="Top" Width="795" Grid.ColumnSpan="2">
-            <MediaElement x:Name="media_element_publicite" LoadedBehavior="Manual" Stretch="Fill"  HorizontalAlignment="Left" Height="558" VerticalAlignment="Top" Width="794" MediaEnded="media_element_publicite_MediaEnded" MouseLeftButtonDown="media_element_publicite_MouseLeftButtonDown" Margin="0,-4,-89,-131"/>
+        Title="AV_Nosotras" Height="768" Width="1024" ResizeMode="NoResize" WindowStyle="None" WindowStartupLocation="CenterScreen">
+    <Grid HorizontalAlignment="Left" Width="1024" Margin="0,0,-6,0" Background="#FF7E00B5">
+        <Grid x:Name="GridTab_Publicidad" Visibility="Hidden"  HorizontalAlignment="Left" Width="1022">
+            <MediaElement x:Name="media_element_publicite" LoadedBehavior="Manual" Stretch="Fill"  HorizontalAlignment="Left" Width="1022" MediaEnded="media_element_publicite_MediaEnded" MouseLeftButtonDown="media_element_publicite_MouseLeftButtonDown" Margin="0,-4,0,0"/>
         </Grid>
-        <Grid x:Name="GridTab_Menu" Visibility="Visible" HorizontalAlignment="Left" Width="795" Height="557" VerticalAlignment="Top" Grid.ColumnSpan="2">
+        <Grid x:Name="GridTab_Menu" Visibility="Visible" HorizontalAlignment="Left" Width="1022" Height="768" VerticalAlignment="Top">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="64*"/>
                 <ColumnDefinition Width="95*"/>
             </Grid.ColumnDefinitions>
-            <Grid Grid.Column="1" HorizontalAlignment="Left" Height="508" VerticalAlignment="Top" Width="475" Margin="0,49,0,0">
-                <Grid x:Name="GridTab_menu_opciones" Visibility="Hidden" HorizontalAlignment="Left" Height="488" Margin="19,14,0,0" VerticalAlignment="Top" Width="438">
-                    <Button x:Name="btn_comprar_producto" Content="" HorizontalAlignment="Left" Margin="47,38,0,0" VerticalAlignment="Top" Width="125" Height="122" Click="btn_comprar_producto_Click">
+            <Grid HorizontalAlignment="Left" Height="675" VerticalAlignment="Top" Width="591" Margin="10,54,0,0" Grid.Column="1">
+                <Grid x:Name="GridTab_menu_opciones" Visibility="Hidden" HorizontalAlignment="Left" Height="652" Margin="10,13,0,0" VerticalAlignment="Top" Width="562">
+                    <Button x:Name="btn_comprar_producto" Content="" HorizontalAlignment="Left" Margin="76,41,0,0" VerticalAlignment="Top" Width="159" Height="158" Click="btn_comprar_producto_Click">
                         <Button.Background>
                             <ImageBrush ImageSource="Resources/Toalla__doble_invisible_800x800.png"/>
                         </Button.Background>
                     </Button>
-                    <Label x:Name="lbl_instrucciones_Copy"  Content="Comprar Producto" HorizontalAlignment="Left" Margin="24,160,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Foreground="#FF7E00B5"/>
-                    <Button x:Name="btn_inscripcionEventos" Content="" HorizontalAlignment="Left" Margin="287,38,0,0" VerticalAlignment="Top" Width="125" Height="122" RenderTransformOrigin="0.404,0.154">
+                    <Label x:Name="lbl_instrucciones_Copy"  Content="Comprar Producto" HorizontalAlignment="Left" Margin="80,204,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18" Foreground="White"/>
+                    <Button x:Name="btn_inscripcionEventos" Content="" HorizontalAlignment="Left" Margin="325,41,0,0" VerticalAlignment="Top" Width="159" Height="158" RenderTransformOrigin="0.404,0.154" Click="btn_inscripcionEventos_Click">
                         <Button.Background>
                             <ImageBrush ImageSource="Resources/woman (1).png"/>
                         </Button.Background>
                     </Button>
-                    <Label x:Name="lbl_instrucciones_Copy1"  Content="Inscripción para &#xA;Eventos" HorizontalAlignment="Left" Margin="269,160,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Foreground="#FF7E00B5"/>
-                    <Button x:Name="btn_sugerencias" Content="" HorizontalAlignment="Left" Margin="47,263,0,0" VerticalAlignment="Top" Width="125" Height="122" RenderTransformOrigin="2.072,0.553">
+                    <Label x:Name="lbl_instrucciones_Copy1"  Content="Inscripción para &#xA;Eventos" HorizontalAlignment="Left" Margin="325,204,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18" Foreground="WhiteSmoke"/>
+                    <Button x:Name="btn_sugerencias" Content="" HorizontalAlignment="Left" Margin="76,348,0,0" VerticalAlignment="Top" Width="159" Height="158" RenderTransformOrigin="2.072,0.553">
                         <Button.Background>
                             <ImageBrush ImageSource="Resources/icon (4).png"/>
                         </Button.Background>
                     </Button>
-                    <Label x:Name="lbl_instrucciones_Copy2"  Content="Sugerencias" HorizontalAlignment="Left" Margin="53,390,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18" Foreground="#FF7E00B5"/>
-                    <Button x:Name="btn_free_product"  Content="" HorizontalAlignment="Left" Margin="287,263,0,0" VerticalAlignment="Top" Width="125" Height="122" RenderTransformOrigin="2.072,0.553">
+                    <Label x:Name="lbl_instrucciones_Copy2"  Content="Sugerencias" HorizontalAlignment="Left" Margin="100,514,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18" Foreground="White" RenderTransformOrigin="0.622,0.559"/>
+                    <Button x:Name="btn_free_product"  Content="" HorizontalAlignment="Left" Margin="325,348,0,0" VerticalAlignment="Top" Width="159" Height="158" RenderTransformOrigin="2.072,0.553" Click="btn_free_product_Click">
                         <Button.Background>
                             <ImageBrush ImageSource="Resources/gift.png"/>
                         </Button.Background>
                     </Button>
-                    <Label x:Name="lbl_instrucciones_Copy3"  Content="Producto Gratis" HorizontalAlignment="Left" Margin="279,390,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Foreground="#FF7E00B5"/>
+                    <Label x:Name="lbl_instrucciones_Copy3"  Content="Producto Gratis" HorizontalAlignment="Left" Margin="343,514,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18" Foreground="#FFFBFBFB"/>
                 </Grid>
-                <Label x:Name="lbl_autor"  Content="Desarrollado por : APR Solutions " HorizontalAlignment="Left" Margin="305,479,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="10" Foreground="#FF7E00B5" FontStyle="Italic"/>
-                <Grid x:Name="GridTab_productos" Visibility="Visible" HorizontalAlignment="Left" Height="488" Margin="19,10,0,0" VerticalAlignment="Top" Width="438">
-                    <Image x:Name="img_product1" HorizontalAlignment="Left" Height="131" Margin="41,29,0,0" VerticalAlignment="Top" Width="124" Source="Resources/Toalla__ultra_invisible_rapisec_800x800.png" Stretch="UniformToFill"/>
-                    <RadioButton x:Name="rdb_product1" Content="X10 - Nosotras Ultra &#xD;&#xA;Invisible &#xD;&#xA;" HorizontalAlignment="Left" Margin="28,160,0,0" VerticalAlignment="Top" FontSize="16" Padding="4,-1,0,-12" RenderTransformOrigin="0.4,0" Background="Transparent" Foreground="#FF7E00B5" Checked="rdb_product1_Checked" />
-                    <Label x:Name="lbl_precio1" Content="Precio: XXX COP" HorizontalAlignment="Left" Margin="52,211,0,0" VerticalAlignment="Top" Width="113" FontWeight="Bold"/>
-                    <Image x:Name="img_product2" HorizontalAlignment="Left" Height="131" Margin="275,29,0,0" VerticalAlignment="Top" Width="124" Source="Resources/download.jpg" Stretch="Fill"/>
-                    <RadioButton x:Name="rdb_product2" Content="X8 - Nosotras Ultra &#xA;Invisible &#xA;" HorizontalAlignment="Left" Margin="258,160,0,0" VerticalAlignment="Top" FontSize="16" Padding="4,-1,0,-12" RenderTransformOrigin="0.4,0" Background="Transparent" Foreground="#FF7E00B5" Checked="rdb_product2_Checked" />
-                    <Label x:Name="lbl_precio2" Content="Precio: XXX COP" HorizontalAlignment="Left" Margin="275,211,0,0" VerticalAlignment="Top" Width="113" FontWeight="Bold"/>
-                    <Image x:Name="img_product3" HorizontalAlignment="Left" Height="131" Margin="155,259,0,0" VerticalAlignment="Top" Width="124" Source="Resources/download (1).jpg" Stretch="Fill"/>
-                    <RadioButton x:Name="rdb_product3" Content="X15 - Nosotras Multi &#xA;         Estilo &#xA;" HorizontalAlignment="Left" Margin="138,390,0,0" VerticalAlignment="Top" FontSize="16" Padding="4,-1,0,-12" RenderTransformOrigin="0.4,0" Background="Transparent" Foreground="#FF7E00B5" Checked="rdb_product3_Checked" />
-                    <Label x:Name="lbl_precio3" Content="Precio: XXX COP" HorizontalAlignment="Left" Margin="155,441,0,0" VerticalAlignment="Top" Width="113" FontWeight="Bold"/>
-                    <Button x:Name="btn_validate" Content="" HorizontalAlignment="Left" Margin="353,385,0,0" VerticalAlignment="Top" Width="75" Height="56" Click="Button_Click_2">
+                <Label x:Name="lbl_autor"  Content="Desarrollado por : Expendomas" HorizontalAlignment="Left" Margin="435,684,0,-32" VerticalAlignment="Top" FontWeight="Bold" FontSize="10" Foreground="White" FontStyle="Italic"/>
+                <Grid x:Name="GridTab_productos" Visibility="Visible" HorizontalAlignment="Left" Height="632" Margin="19,10,0,0" VerticalAlignment="Top" Width="562">
+                    <Label x:Name="lbl_precio1" Content="Precio: XXX COP" HorizontalAlignment="Left" Margin="52,211,0,0" VerticalAlignment="Top" Width="124" FontWeight="Bold" Foreground="White" FontSize="14"/>
+                    <Label x:Name="lbl_precio2" Content="Precio: XXX COP" HorizontalAlignment="Left" Margin="364,211,0,0" VerticalAlignment="Top" Width="124" FontWeight="Bold" Foreground="White" FontSize="14"/>
+                    <Label x:Name="lbl_precio3" Content="Precio: XXX COP" HorizontalAlignment="Left" Margin="235,482,0,0" VerticalAlignment="Top" Width="135" FontWeight="Bold" Foreground="White" FontSize="14"/>
+                    <Button x:Name="btn_validate" Content="" HorizontalAlignment="Left" Margin="468,552,0,0" VerticalAlignment="Top" Width="84" Height="70" Click="Button_validerclick">
                         <Button.Background>
-                            <ImageBrush ImageSource="Resources/checked.png"/>
+                            <ImageBrush ImageSource="Resources/checked (1).png"/>
                         </Button.Background>
                     </Button>
-                    <Button x:Name="btn_cancel"  Content="" HorizontalAlignment="Right" Margin="0,390,353,0" VerticalAlignment="Top" Width="75" Height="56" RenderTransformOrigin="-1.747,0.446" Click="Button_Click_1">
+                    <Button x:Name="btn_cancel"  Content="" HorizontalAlignment="Right" Margin="0,552,450,0" VerticalAlignment="Top" Width="84" Height="70" RenderTransformOrigin="-1.747,0.446" Click="Button_Click_1">
+                        <Button.Background>
+                            <ImageBrush ImageSource="Resources/error.png"/>
+                        </Button.Background>
+                    </Button>
+                    <RadioButton x:Name="rdb_producto1" Content="X10 - Nosotras Ultra &#xD;&#xA;Invisible &#xD;&#xA;" HorizontalAlignment="Left" Margin="28,165,0,0" VerticalAlignment="Top" Foreground="White" FontSize="18" Checked="rdb_producto1_Checked"/>
+                    <RadioButton x:Name="rdb_producto2" Content="X8 - Nosotras Ultra &#xA;Invisible &#xA;" HorizontalAlignment="Left" Margin="336,165,0,0" VerticalAlignment="Top" Foreground="White" FontSize="18" Checked="rdb_producto2_Checked"/>
+                    <RadioButton x:Name="rdb_producto3" Content="X15 - Nosotras Multi &#xA;         Estilo &#xA;" HorizontalAlignment="Left" Margin="196,440,0,0" VerticalAlignment="Top" Foreground="White" FontSize="18" Checked="rdb_producto2_Copy_Checked"/>
+                    <Button x:Name="btn_product1" HorizontalAlignment="Left" Margin="52,24,0,0" VerticalAlignment="Top" Width="142" Height="131" Click="btn_product1_Click">
+                        <Button.Background>
+                            <ImageBrush ImageSource="Resources/Toalla__ultra_invisible_rapisec_800x800.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="btn_product3" HorizontalAlignment="Left" Margin="220,294,0,0" VerticalAlignment="Top" Width="142" Height="131" Click="btn_product3_Click">
+                        <Button.Background>
+                            <ImageBrush ImageSource="Resources/download (1).jpg"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="btn_product2" HorizontalAlignment="Left" Margin="364,24,0,0" VerticalAlignment="Top" Width="142" Height="131" Click="btn_product2_Click">
+                        <Button.Background>
+                            <ImageBrush ImageSource="Resources/download.jpg"/>
+                        </Button.Background>
+                    </Button>
+                    <Label x:Name="lbl_cantidad_product1" Content="cantidad 1 " HorizontalAlignment="Left" Margin="52,245,0,0" VerticalAlignment="Top" Width="124" FontWeight="Bold" Foreground="White" FontSize="14"/>
+                    <Label x:Name="lbl_cantidad_product2" Content="cantidad 1 " HorizontalAlignment="Left" Margin="382,245,0,0" VerticalAlignment="Top" Width="124" FontWeight="Bold" Foreground="White" FontSize="14"/>
+                    <Label x:Name="lbl_cantidad_product3" Content="cantidad 1 " HorizontalAlignment="Left" Margin="246,511,0,0" VerticalAlignment="Top" Width="124" FontWeight="Bold" Foreground="White" FontSize="14"/>
+                </Grid>
+                <Grid x:Name="GridTab_inscription_events" Visibility="Hidden" HorizontalAlignment="Left" Height="708" VerticalAlignment="Top" Width="591" Margin="0,-33,0,0">
+                    <WebBrowser x:Name="web_element_inscription" HorizontalAlignment="Left" Height="577" Margin="0,37,-9,0" VerticalAlignment="Top" Width="600"/>
+                    <Button x:Name="btn_return_menu" Content="" HorizontalAlignment="Left" Margin="10,633,0,10" Width="82" Click="Button_Click_3" RenderTransformOrigin="-0.183,0.592">
+                        <Button.Background>
+                            <ImageBrush ImageSource="Resources/error.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="btn_valider_inscription" Content="" HorizontalAlignment="Left" Margin="499,633,0,10" Width="82" Click="Button_Click_4" RenderTransformOrigin="1.598,0.615">
+                        <Button.Background>
+                            <ImageBrush ImageSource="Resources/checked (1).png"/>
+                        </Button.Background>
+                    </Button>
+                </Grid>
+                <Grid x:Name="GridTab_free_product" Visibility="Hidden" Height="684" VerticalAlignment="Top" Background="#FF7E00B5" Margin="-11,0,-9,-9">
+                    <TextBox HorizontalAlignment="Left" Height="51" Margin="115,344,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="364" FontSize="22"/>
+                    <Label Content="Digite el Codigo de Regalo" HorizontalAlignment="Left" Margin="47,226,0,0" VerticalAlignment="Top" Foreground="#FFFF4AB4" FontSize="40" FontWeight="Bold" FontStyle="Italic"/>
+                    <Button x:Name="btn_valider_regalo" Content="" HorizontalAlignment="Left" Margin="435,464,0,0" VerticalAlignment="Top" Width="88" Height="80" BorderBrush="#FF707070" Click="btn_valider_regalo_Click">
+                        <Button.Background>
+                            <ImageBrush ImageSource="Resources/checked (1).png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="btn_return2"  Content="" HorizontalAlignment="Left" Margin="93,464,0,0" VerticalAlignment="Top" Width="88" Height="80" BorderBrush="#FF707070" Click="Button_Click_5">
                         <Button.Background>
                             <ImageBrush ImageSource="Resources/error.png"/>
                         </Button.Background>
                     </Button>
                 </Grid>
             </Grid>
-            <Grid HorizontalAlignment="Left" Height="557" VerticalAlignment="Top" Width="320">
-                <MediaElement x:Name="media_element_inicio" Stretch="Fill" HorizontalAlignment="Left" Height="392" VerticalAlignment="Top" Width="320"/>
-                <Label x:Name="lbl_instrucciones"  Content="lbl_instrucciones" HorizontalAlignment="Left" Margin="10,416,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Foreground="#FF7E00B5"/>
-                <Grid HorizontalAlignment="Left" Height="46" Margin="0,511,0,0" VerticalAlignment="Top" Width="320" RenderTransformOrigin="0.07,0.375" Background="#FFFF4AB4"/>
+            <Grid  HorizontalAlignment="Left" Height="739" VerticalAlignment="Top" Width="411" Background="#FF7E00B5">
+                <MediaElement x:Name="media_element_inicio" Stretch="Fill" LoadedBehavior="Manual" HorizontalAlignment="Left" Height="460" VerticalAlignment="Top" Width="409" MediaEnded="media_element_inicio_MediaEnded"/>
+                <Label x:Name="lbl_instrucciones"  Content="lbl_instrucciones" HorizontalAlignment="Left" Margin="0,505,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Foreground="#FFF4F0F5" RenderTransformOrigin="0.79,-4.905"/>
+                <Grid HorizontalAlignment="Left" Height="46" Margin="-2,721,0,-28" VerticalAlignment="Top" Width="411" RenderTransformOrigin="0.07,0.375" Background="#FFFF4AB4"/>
             </Grid>
-            <Grid Grid.Column="1" HorizontalAlignment="Left" Height="49" VerticalAlignment="Top" Width="475" Background="#FFFF4AB4"/>
+            <Grid Grid.Column="1" HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Width="611" Background="#FFFF4AB4"/>
         </Grid>
 
     </Grid>

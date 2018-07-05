@@ -1,0 +1,16 @@
+﻿<Window x:Class="AV_Nosotras.WindowCustomMessage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WindowCustomMessage" Height="165" Width="365" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" Topmost="True">
+    <Grid>
+        <Label x:Name="lbl_message" Content="mensaje" HorizontalAlignment="Left" Margin="0,63,0,0" VerticalAlignment="Top" Foreground="#FF7E00B5" FontSize="16" FontWeight="Bold"/>
+        <Button x:Name="btn_fini" Content="" HorizontalAlignment="Left" Margin="299,100,0,0" VerticalAlignment="Top" Width="56" Height="55">
+            <Button.Background>
+                <ImageBrush ImageSource="Resources/checked.png"/>
+            </Button.Background>
+        </Button>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="27" Margin="0,1,0,0" VerticalAlignment="Top" Width="365" Background="#FF7E00B5"/>
+        <Label x:Name="lbl_title" Content="titulo" HorizontalAlignment="Left" Margin="1,-1,0,0" VerticalAlignment="Top" Foreground="White" FontSize="16" FontStyle="Italic"/>
+
+    </Grid>
+</Window>
